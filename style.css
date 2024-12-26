@@ -1,0 +1,172 @@
+/* Basic reset to remove default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Container for the main content */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  /* Search box */
+  .search-box {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  .search-box input:focus {
+    border: 1px solid #4caf50;
+  }
+  
+  /* Seasons section */
+  .seasons {
+    margin-bottom: 30px;
+  }
+  
+  .seasons h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .season-button {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .season-button:hover {
+    background-color: #4caf50;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .selected-season {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* Months section */
+  .months {
+    margin-bottom: 30px;
+  }
+  
+  .months h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .month-button {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .month-button:hover {
+    background-color: #4caf50;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .selected-month {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* Vegetable grid section */
+  .vegetable-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .vegetable-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .vegetable-card:hover {
+    background-color: #e0f7e0;
+    transform: scale(1.05);
+  }
+  
+  .vegetable-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .vegetable-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .vegetable-card .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #388e3c;
+    margin-top: 10px;
+  }
+  
+  /* No results section */
+  .no-results {
+    text-align: center;
+    color: #888;
+    font-size: 1.2rem;
+    padding: 30px;
+  }
+  
